@@ -1,2 +1,2 @@
 # PS_Tic-Tac-Toe
-Tic-Tac-Tac browser game
+Tic-Tac-Toe browser game
