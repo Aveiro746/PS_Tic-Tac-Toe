@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding:0x;
+    box-sizing: border-box;
+    background-color:cyan
+    
+}
+
+.Maincontainer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orange;
+    
+
+
+}
+
+.player-score{
+    width:200px;
+    height: 100px;
+    border: solid yellow;
+    align-self: flex-start;
+    
+
+}
+
+.player-choice{
+    border:solid green;
+    width:200px;
+    height:300px;
+    align-self: flex-end;
+
+}
+
+.gamegrid{
+    display:grid;
+    width:500px;
+    height:500px;
+    grid-template-columns: auto auto auto;
+}
+
+.block{
+    display:flex;
+    width:auto;
+    height: auto;
+    align-items:center;
+    border: 2px solid black
+}
+.block:hover{
+    background-color: chartreuse;
+}
+
