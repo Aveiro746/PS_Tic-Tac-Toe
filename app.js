@@ -13,29 +13,19 @@
 // [2,4,6]
 
 //Get block tiles from Html
-let tiles = document.getElementsByClassName('block');
+const tiles= document.getElementById('gamegrid')
 
-
-
-
-// assign player 1 and 2 symbols
-let player1= "X"
-let player2 ="O"
-
-let move = document.createElement("p")
-let player1move=document.createTextNode("X")//createTextNode found in W3schools
-move.appendChild(player1move)
 //Alternate click events from player 1 to player 2
 
-
-//winning conditions
-const wincon = [
-    [0,1,2]
-    [3,4,5]
-    [6,7,8]
-    [0,3,6]
-    [1,4,7]
-    [2,5,8]
-    [0,4,8]
-    [2,4,6]
-]
+let playerfirstmove= true
+tiles.addEventListener('click' , (event)=>{
+    if (event.target.className === 'block') {
+        event.target.innerHTML = playerfirstmove ? "X" : "O";
+        playerfirstmove = !playerfirstmove
+    }
+    return;
+})
+// only one input per tile
+//win condition
+//tie event
+//reset board
