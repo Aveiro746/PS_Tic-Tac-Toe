@@ -79,7 +79,7 @@ function checkresult() {
              
             }
             if(roundEnd){
-            alert("WINNER")
+            alert("WINNER , refresh the page to play again")
             console.log("winner")    
 }
         }
