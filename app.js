@@ -22,7 +22,7 @@ const blocks = document.getElementsByClassName('block')
 //Alternate click events from player 1 to player 2
 
 let playerfirstmove= true
-tiles.addEventListener('click' , (event)=>{//event & target found on w3schools
+tiles.addEventListener('click' , (event)=>{//event & target found on kirupa
     if (event.target.className === 'block' && event.target.innerText === "") {
         event.target.innerHTML = playerfirstmove ? "X" : "O";
         playerfirstmove = !playerfirstmove
